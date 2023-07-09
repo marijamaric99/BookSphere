@@ -1,7 +1,6 @@
 # BookSphere
-This application project was created for a masters degree project. It is a simple book project where a user can log in or register in application, add categories, 
-add new books, read books, post comments and other simple things. User can also save his favorite books to read them, manage its profile such as change personal data,
-change password or log out.
+This application project was developed as part of a master's degree program. It aims to provide a user-friendly platform for book enthusiasts. Within the application, users can easily log in or register, create categories, add new books, enjoy reading, share their thoughts through comments, and perform various other straightforward actions. Additionally, users have the option to save their favorite books for future reading and manage their profiles, allowing them to update personal information, change passwords, and gracefully log out when needed.
+
 
 ![splash](https://github.com/marijamaric99/BookSphere/assets/67763924/344bf763-af82-4d4b-a6f1-f50f57f6706e)
 ![MainActivity](https://github.com/marijamaric99/BookSphere/assets/67763924/9055b3ec-6c44-4de2-8932-7059e4523efd)
