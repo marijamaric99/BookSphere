@@ -1,5 +1,5 @@
 # BookSphere
-This project was created for a masters degree project. It is a simple book project where a user can log in or register in application, add categories, 
+This application project was created for a masters degree project. It is a simple book project where a user can log in or register in application, add categories, 
 add new books, read books, post comments and other simple things. User can also save his favorite books to read them, manage its profile such as change personal data,
 change password or log out.
 
