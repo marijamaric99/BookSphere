@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".SettingsActivity">
+
+    <RelativeLayout
+        android:id="@+id/profileData"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/shape"
+        android:orientation="vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profImg"
+            android:layout_width="233dp"
+            android:layout_height="174dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/profile12"
+            />
+
+        <TextView
+            android:id="@+id/viewLl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profImg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Ime i prezime"
+            android:textColor="@color/white"
+            android:textSize="28dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:id="@+id/viewFullname"
+        android:layout_width="368dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/profileData"
+        android:background="@drawable/shape_edittext"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomAppBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLine1"
+        app:layout_constraintVertical_bias="0.401">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_person_24" />
+
+        <TextView
+            android:id="@+id/fullnameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Marija Marić"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@id/linearLine1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/viewFullname"
+        android:background="@color/gray2"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <LinearLayout
+        android:id="@+id/viewEmail"
+        android:layout_width="368dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/linearLine1"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_edittext"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewFullname">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_mail_outline_24" />
+
+
+
+        <TextView
+            android:id="@+id/emailTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="marija.maric@fpmoz.sum.ba"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@id/linearLine2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/viewEmail"
+        android:background="@color/gray2"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="401dp" />
+
+    <LinearLayout
+        android:id="@+id/viewPhone"
+        android:layout_width="368dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/linearLine2"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_edittext"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewEmail">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_local_phone_24" />
+
+
+
+        <TextView
+            android:id="@+id/phoneTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="+38763-123-456"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/linearLine3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/viewPhone"
+        android:background="@color/gray2"
+        app:layout_constraintTop_toBottomOf="@+id/viewPhone"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="368dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/linearLine3"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomAppBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profileData"
+        app:layout_constraintVertical_bias="0.795">
+
+        <Button
+            android:id="@+id/editProfile"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FEFEFE"
+            android:text="Uredi profil"
+            android:textColor="@color/plava"
+            android:textSize="15dp"
+            app:cornerRadius="20sp" />
+
+        <Button
+            android:id="@+id/changePassword"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FDFDFD"
+            android:text="Promijeni lozinku"
+            android:textColor="@color/plava"
+            android:textSize="15dp"
+            app:cornerRadius="20sp" />
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="Odjava"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:backgroundTint="#DA2D2D"
+            app:cornerRadius="20sp" />
+    </LinearLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="-28dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            app:menu="@menu/bottom_nav_menu" />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

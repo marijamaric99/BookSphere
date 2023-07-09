@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aguafina_script</item>
+        <item>@font/alex_brush</item>
+        <item>@font/architects_daughter</item>
+        <item>@font/bilbo_swash_caps</item>
+        <item>@font/emilys_candy</item>
+        <item>@font/kalam_light</item>
+        <item>@font/shadows_into_light_two</item>
+    </array>
+</resources>

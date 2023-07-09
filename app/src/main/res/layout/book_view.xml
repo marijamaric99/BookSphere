@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="5dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:contentPadding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/itemView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/pdfRl"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/gray">
+
+            <ImageView
+                android:id="@+id/imageIv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/titleTv"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ime knjige"
+            android:layout_toEndOf="@id/pdfRl"
+            android:layout_toStartOf="@id/moreBtn"
+            android:textColor="@color/black"
+            android:maxLines="2">
+        </TextView>
+
+        <TextView
+            android:id="@+id/authorTv"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Autor"
+            android:textStyle="italic"
+            android:textColor="@color/plava"
+            android:layout_toEndOf="@id/pdfRl"
+            android:layout_below="@id/titleTv"
+            android:layout_marginTop="5dp"
+            android:maxLines="1">
+        </TextView>
+
+        <TextView
+            android:id="@+id/descriptionTv"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/pdfRl"
+            android:layout_below="@id/authorTv"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:text="Opis knjige">
+        </TextView>
+
+        <TextView
+            android:id="@+id/sizeTv"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13MB"
+            android:layout_toEndOf="@id/pdfRl"
+            android:textColor="@color/black"
+            android:layout_alignParentBottom="true"
+            android:maxLines="1">
+        </TextView>
+
+
+
+        <!--<TextView
+            android:id="@+id/dateTv"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dd/MM/yyyy"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/black"
+            android:layout_alignParentBottom="true"
+            android:maxLines="1">
+        </TextView>-->
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/savedBtn"
+            android:background="@drawable/ic_baseline_bookmark_border_24"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="18dp">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/moreBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_baseline_more_opt"
+            android:background="@android:color/transparent"
+            android:padding="5dp">
+        </ImageButton>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

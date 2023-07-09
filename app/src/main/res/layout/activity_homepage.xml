@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomepageActivity"
+    android:background="@drawable/background1">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/kartica"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:cardBackgroundColor="@color/gray2"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="20dp">
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/imageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:iss_period="5000"
+            app:iss_auto_cycle="true"
+            app:iss_delay="5000"
+            app:iss_corner_radius="20"
+            app:iss_title_background="@color/plava"/>
+        
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textTv"
+        android:layout_width="match_parent"
+        android:layout_height="316dp"
+        android:layout_above="@id/bottomAppBar"
+        android:layout_below="@id/kartica"
+        android:layout_marginBottom="59dp"
+        android:fontFamily="@font/kalam_light"
+        android:paddingStart="15dp"
+        android:paddingTop="40dp"
+        android:paddingEnd="15dp"
+        android:shadowColor="#2196F3"
+        android:text="Hej ti, čitaoče, dobrodošao u svijet čarobnih riječi i neograničene mašte! Otvori vrata svoje duše i pusti riječima da te vode na neistražene puteve, gdje se avantura i saznanje prepliću u harmoniji.
+U svijetu knjiga, čarolija se događa na svakom koraku. Uđi u taj svijet sa otvorenim umom i srčanom radoznalošću i otkriti ćeš da su stranice puno više od slova! "
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:typeface="normal" />
+
+    <ImageButton
+        android:id="@+id/txtTv"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="314dp"
+        android:layout_marginTop="614dp"
+        android:layout_marginEnd="17dp"
+        android:src="@drawable/icons8_click_50"
+        app:cornerRadius="60sp">
+
+
+    </ImageButton>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_alignParentBottom="true"
+        tools:layout_editor_absoluteX="-28dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            app:menu="@menu/bottom_nav_menu" />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+</RelativeLayout>

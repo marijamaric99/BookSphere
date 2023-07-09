@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBookActivity"
+    android:background="@drawable/background1">
+
+    <RelativeLayout
+        android:id="@+id/toolBarRl"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/shape">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="18dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:padding="5dp" />
+
+        <ImageView
+            android:id="@+id/imageBook"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/profile12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageBook"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Dodavanje knjiga"
+            android:textSize="30sp"
+            android:textColor="@color/white">
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/attachImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="75dp"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_add_photo"/>
+
+        <ImageButton
+            android:id="@+id/attachPdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="18dp"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_pdf"/>
+
+
+    </RelativeLayout>
+
+    <!--Input za ime knjige-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/titleTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="275dp"
+        app:hintEnabled="false">
+
+        <EditText
+            android:id="@+id/titleInputText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableStart="@drawable/ic_baseline_drive_file_rename"
+            android:drawablePadding="10dp"
+            android:hint="Ime knjige"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray">
+        </EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Input za opis knjige-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/descriptionTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/titleTil"
+        android:layout_marginTop="5dp"
+        app:hintEnabled="false">
+
+        <EditText
+            android:id="@+id/descriptionInputText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableStart="@drawable/ic_baseline_description"
+            android:drawablePadding="10dp"
+            android:hint="Opis knjige"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray">
+        </EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Input za opis knjige-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/authorTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/descriptionTil"
+        android:layout_marginTop="5dp"
+        app:hintEnabled="false">
+
+        <EditText
+            android:id="@+id/authorInputText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableStart="@drawable/ic_baseline_person_gray"
+            android:drawablePadding="10dp"
+            android:hint="Autor"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray">
+        </EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/categoryTil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/authorTil"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:hint="@string/odaberi"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/categoryInputTxt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#DFDFDF"
+                android:inputType="textAutoComplete"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/authorTil"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="30dp"
+        android:text="Spremi"
+        android:textColor="@color/white">
+
+    </Button>
+
+
+</RelativeLayout>
