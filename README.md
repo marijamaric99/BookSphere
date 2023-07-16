@@ -11,7 +11,8 @@ This application project was developed as part of a master's degree program. It 
 ![BooksActivity](https://github.com/marijamaric99/BookSphere/assets/67763924/5d6f567a-e8b4-4a3d-91ba-1a46413218a2)
 ![BookDetailsActivity](https://github.com/marijamaric99/BookSphere/assets/67763924/3e6d39f4-04eb-4b59-b8fd-7e0633fcce85)
 ![BookmarkActivity](https://github.com/marijamaric99/BookSphere/assets/67763924/2aa78689-75c9-4b4e-b3cf-ce92e3ac319a)
-![ProfileActivity](https://github.com/marijamaric99/BookSphere/assets/67763924/b5fa9d93-1deb-4980-9c05-b132100d9a4a)
+![profileActivity](https://github.com/marijamaric99/BookSphere/assets/67763924/3d5899f4-d68c-407c-96bd-e40b35167717)
+
 
 
 
